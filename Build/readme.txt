@@ -1,1 +1,0 @@
-this apk is for android
