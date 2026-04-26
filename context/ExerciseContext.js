@@ -3,7 +3,6 @@ import React, { createContext, useState } from "react";
 export const ExerciseContext = createContext();
 
 export const ExerciseProvider = ({ children }) => {
-  // ✅ Default exercises (shown when app opens)
   const [exercises, setExercises] = useState([
     
     {
@@ -51,7 +50,6 @@ export const ExerciseProvider = ({ children }) => {
     },
   ]);
 };
-  // ✅ Toggle completed status
   const toggleComplete = (id) => {
     setExercises((prev) =>
       prev.map((ex) =>

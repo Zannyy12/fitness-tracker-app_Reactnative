@@ -45,7 +45,6 @@ export default function HomeScreen({ navigation }) {
         <Text style={styles.subHeading}>Track your daily workouts</Text>
       </View>
 
-      {/* Top Buttons */}
       <View style={styles.topButtons}>
         <TouchableOpacity
           style={[styles.smallBtn, styles.blue]}
@@ -54,17 +53,8 @@ export default function HomeScreen({ navigation }) {
           <Ionicons name="checkmark-done" size={18} color="#fff" />
           <Text style={styles.btnText}>Completed</Text>
         </TouchableOpacity>
-
-        {/* <TouchableOpacity
-          style={[styles.smallBtn, styles.purple]}
-          onPress={() => navigation.navigate("Quotes")}
-        >
-          <Ionicons name="flash" size={18} color="#fff" />
-          <Text style={styles.btnText}>Motivation</Text>
-        </TouchableOpacity> */}
       </View>
 
-      {/* List / Empty State */}
       {exercises.length === 0 ? (
         <View style={styles.emptyBox}>
           <Ionicons name="barbell-outline" size={50} color="#aaa" />
@@ -83,7 +73,6 @@ export default function HomeScreen({ navigation }) {
         />
       )}
 
-      {/* Floating Add Button */}
       <TouchableOpacity
         style={styles.fab}
         onPress={() => navigation.navigate("Add")}

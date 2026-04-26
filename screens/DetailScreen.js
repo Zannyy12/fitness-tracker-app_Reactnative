@@ -7,7 +7,6 @@ export default function DetailScreen({ route }) {
 
   const { toggleComplete, exercises } = useContext(ExerciseContext);
 
-  // ✅ always get latest updated state
   const currentExercise = exercises.find((e) => e.id === exercise.id);
 
   return (
@@ -40,10 +39,6 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#fff",
   },
-
-  // completedBg: {
-  //   backgroundColor: "#dcfce7", // light green
-  // },
 
   image: {
     width: "100%",
